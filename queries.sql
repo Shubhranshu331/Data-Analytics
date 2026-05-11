@@ -261,10 +261,8 @@ WHERE e.enrollment_id IS NULL
 ORDER BY s.enrollment_year;
 
 
--- ------------------------------------------------------------
 --  Q14. Grade distribution across all courses
 --  Aggregates grade frequency — useful for a bell-curve view.
--- ------------------------------------------------------------
 SELECT
     e.grade,
     COUNT(*)                            AS frequency,
