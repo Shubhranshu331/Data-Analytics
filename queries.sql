@@ -1,4 +1,4 @@
--- ============================================================
+--- ============================================================
 --  Student Database Management System
 --  File: queries.sql
 --  Description: Categorised SQL queries — Basic → Advanced
@@ -221,11 +221,9 @@ GROUP BY d.department_id, d.department_name
 ORDER BY dept_avg_marks IS NULL, dept_avg_marks DESC;
 
 
--- ------------------------------------------------------------
 --  Q12. Student transcript  (parameterise with a student_id)
 --  Returns the full course history for one student.
 --  Replace '1' with any valid student_id.
--- ------------------------------------------------------------
 SELECT
     CONCAT(s.first_name, ' ', s.last_name)   AS student_name,
     d.department_name,
