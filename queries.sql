@@ -200,11 +200,9 @@ GROUP BY c.course_id, c.course_code, c.course_name, d.department_name
 ORDER BY total_students DESC;
 
 
--- ------------------------------------------------------------
 --  Q11. Department-wise performance summary
 --  Rolls everything up to department level — useful for
 --  faculty reports and academic review boards.
--- ------------------------------------------------------------
 SELECT
     d.department_name,
     COUNT(DISTINCT s.student_id)        AS total_students,
