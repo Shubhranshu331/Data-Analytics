@@ -181,10 +181,8 @@ GROUP BY c.course_id, c.course_code, c.course_name, c.instructor
 ORDER BY avg_marks_completed IS NULL, avg_marks_completed DESC;
 
 
--- ------------------------------------------------------------
 --  Q10. Student count per course
 --  Helps identify the most popular / under-enrolled courses.
--- ------------------------------------------------------------
 SELECT
     c.course_code,
     c.course_name,
