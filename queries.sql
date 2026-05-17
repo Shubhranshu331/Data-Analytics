@@ -120,11 +120,10 @@ ORDER BY d.department_name, c.course_code;
 --  SECTION 3 — ADVANCED QUERIES
 -- ============================================================
 
--- ------------------------------------------------------------
 --  Q7. Average marks per student (completed courses only)
 --  Aggregates each student's performance into a single row.
 --  NULL marks (still enrolled) are excluded by the WHERE.
--- ------------------------------------------------------------
+
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS student_name,
