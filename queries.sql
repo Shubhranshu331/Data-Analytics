@@ -101,10 +101,8 @@ WHERE c.course_name = 'Database Management Systems'
 ORDER BY e.marks IS NULL, e.marks DESC; 
 
 
--- ------------------------------------------------------------
 --  Q6. Course catalogue with department info
 --  Useful for an admin dashboard listing all courses.
--- ------------------------------------------------------------
 SELECT
     c.course_code,
     c.course_name,
