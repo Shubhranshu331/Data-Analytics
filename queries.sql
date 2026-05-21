@@ -81,11 +81,9 @@ JOIN Courses      c ON e.course_id  = c.course_id
 ORDER BY s.last_name, c.course_code;
 
 
--- ------------------------------------------------------------
 --  Q5. Students enrolled in a specific course
 --  Lists every student in "Database Management Systems"
 --  along with their current marks.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS student_name,
