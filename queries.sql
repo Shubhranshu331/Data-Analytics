@@ -58,15 +58,11 @@ WHERE s.is_active = TRUE
 ORDER BY d.department_name, s.last_name;
 
 
--- ============================================================
 --  SECTION 2 — INTERMEDIATE QUERIES
--- ============================================================
 
--- ------------------------------------------------------------
 --  Q4. Students with their enrolled courses  (three-table JOIN)
 --  Shows each student alongside the course they enrolled in,
 --  their marks, and current status.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS student_name,
