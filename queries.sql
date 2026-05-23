@@ -1,19 +1,12 @@
---- ============================================================
 --  Student Database Management System
---  File: queries.sql
 --  Description: Categorised SQL queries — Basic → Advanced
--- ============================================================
 
 
--- ============================================================
 --  SECTION 1 — BASIC QUERIES
--- ============================================================
 
--- ------------------------------------------------------------
 --  Q1. All students (full list)
 --  Returns every student with their department name and year.
 --  ORDER BY makes output predictable and easy to scan.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     s.first_name,
@@ -27,11 +20,9 @@ JOIN Departments  d ON s.department_id = d.department_id
 ORDER BY s.enrollment_year DESC, s.last_name;
 
 
--- ------------------------------------------------------------
 --  Q2. Filter students by department
 --  Change the literal to any department name as needed.
 --  Using the JOIN means we never hard-code a numeric ID here.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     s.first_name,
@@ -44,9 +35,7 @@ WHERE d.department_name = 'Computer Science'
 ORDER BY s.last_name;
 
 
--- ------------------------------------------------------------
 --  Q3. All active students only
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS full_name,
