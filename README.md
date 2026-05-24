@@ -2,7 +2,7 @@
 
 ## 🔍 Overview
 
-This project implements a relational database system for managing students, courses, enrollments, and academic performance using SQL.
+This repository includes a relational database system for managing students, courses, enrollments, and academic performance using SQL, along with additional data analytics dashboard projects.
 
 It demonstrates real-world database design along with practical querying techniques ranging from basic retrieval to advanced analytics.
 
@@ -45,10 +45,15 @@ The system includes the following core tables:
 ```
 Student-Database-Management-System/
 │
-├── schema.sql
-├── insert_data.sql
-├── queries.sql
-└── README.md
+├── README.md
+├── Student Database Management System/
+│   ├── schema.sql
+│   ├── insert_data.sql
+│   └── queries.sql
+├── Bike Sales Dashboard/
+├── Cassic model/
+├── EV dashboard/
+└── Netflix dataset/
 ```
 
 ---
@@ -103,7 +108,7 @@ CREATE DATABASE student_db;
 USE student_db;
 ```
 
-2. Run files in order:
+2. Run the SQL files from `Student Database Management System/` in order:
 
 * schema.sql
 * insert_data.sql
@@ -111,7 +116,7 @@ USE student_db;
 
 ---
 
-## 📸 Sample Output 
+## 📸 Sample Output
 <img width="1366" height="768" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/f562f2e1-d7da-4ded-ba82-2482c5f9ddeb" />
 
 
