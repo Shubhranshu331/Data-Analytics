@@ -1,4 +1,4 @@
-# 📊 Data Analytics Portfolio
+# 📊 Data Analytics 
 
 > A collection of end-to-end data analytics projects covering SQL, Power BI, Tableau, and MySQL — focused on real-world business problems, interactive dashboards, and actionable insights.
 
