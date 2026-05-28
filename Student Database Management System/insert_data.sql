@@ -1,12 +1,10 @@
--- ============================================================
 --  Student Database Management System
 --  File: insert_data.sql
 --  Description: Realistic sample data for all tables
--- ============================================================
 
--- ------------------------------------------------------------
+
 --  Departments  (6 rows)
--- ------------------------------------------------------------
+
 INSERT INTO Departments (department_name, faculty) VALUES
     ('Computer Science',        'Faculty of Engineering'),
     ('Electrical Engineering',  'Faculty of Engineering'),
@@ -15,9 +13,9 @@ INSERT INTO Departments (department_name, faculty) VALUES
     ('Data Science',            'Faculty of Engineering'),
     ('Physics',                 'Faculty of Sciences');
 
--- ------------------------------------------------------------
+
 --  Courses  (7 rows)
--- ------------------------------------------------------------
+
 INSERT INTO Courses (course_code, course_name, department_id, credit_hours, instructor) VALUES
     ('CS101',  'Introduction to Programming',      1, 3, 'Dr. Ananya Sharma'),
     ('CS302',  'Database Management Systems',      1, 4, 'Dr. Rahul Verma'),
@@ -27,9 +25,9 @@ INSERT INTO Courses (course_code, course_name, department_id, credit_hours, inst
     ('DS301',  'Machine Learning Fundamentals',    5, 4, 'Dr. Kavita Joshi'),
     ('PH101',  'Classical Mechanics',              6, 3, 'Prof. Deepak Patel');
 
--- ------------------------------------------------------------
+
 --  Students  (12 rows — mix of departments & years)
--- ------------------------------------------------------------
+
 INSERT INTO Students
     (first_name, last_name, email, phone, date_of_birth, gender, department_id, enrollment_year)
 VALUES
@@ -46,9 +44,9 @@ VALUES
     ('Siddharth','Bose',      'siddharth.bose@university.edu', '9876543220', '2001-05-17', 'M', 4, 2020),
     ('Nisha',    'Kapoor',    'nisha.kapoor@university.edu',   '9876543221', '2002-10-03', 'F', 6, 2021);
 
--- ------------------------------------------------------------
+
 --  Enrollments  (25 rows — varied marks & statuses)
--- ------------------------------------------------------------
+
 INSERT INTO Enrollments (student_id, course_id, enrolled_on, marks, grade, status) VALUES
     -- Aarav  (CS student, 2021)
     (1,  1, '2021-08-01',  88.50, 'A',  'completed'),
