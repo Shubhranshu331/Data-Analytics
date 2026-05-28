@@ -1,8 +1,6 @@
--- ============================================================
 --  Student Database Management System
 --  File: queries.sql
 --  Description: Categorised SQL queries — Basic → Advanced
--- ============================================================
 
 
 
