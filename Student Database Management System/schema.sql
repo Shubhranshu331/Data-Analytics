@@ -1,8 +1,7 @@
--- ============================================================
 --  Student Database Management System
 --  File: schema.sql
 --  Compatible: MySQL 8.0+
--- ============================================================
+
 
 -- Drop tables in reverse dependency order (safe re-runs)
 DROP TABLE IF EXISTS Enrollments;
@@ -10,18 +9,18 @@ DROP TABLE IF EXISTS Students;
 DROP TABLE IF EXISTS Courses;
 DROP TABLE IF EXISTS Departments;
 
--- ------------------------------------------------------------
+
 --  TABLE: Departments
--- ------------------------------------------------------------
+
 CREATE TABLE Departments (
     department_id   INT             AUTO_INCREMENT  PRIMARY KEY,
     department_name VARCHAR(100)    NOT NULL UNIQUE,
     faculty         VARCHAR(100)    NOT NULL
 );
 
--- ------------------------------------------------------------
+
 --  TABLE: Students
--- ------------------------------------------------------------
+
 CREATE TABLE Students (
     student_id      INT             AUTO_INCREMENT  PRIMARY KEY,
     first_name      VARCHAR(50)     NOT NULL,
@@ -40,9 +39,9 @@ CREATE TABLE Students (
         ON UPDATE CASCADE
 );
 
--- ------------------------------------------------------------
+
 --  TABLE: Courses
--- ------------------------------------------------------------
+
 CREATE TABLE Courses (
     course_id       INT             AUTO_INCREMENT  PRIMARY KEY,
     course_code     VARCHAR(10)     NOT NULL UNIQUE,
@@ -57,9 +56,9 @@ CREATE TABLE Courses (
         ON UPDATE CASCADE
 );
 
--- ------------------------------------------------------------
+
 --  TABLE: Enrollments
--- ------------------------------------------------------------
+
 CREATE TABLE Enrollments (
     enrollment_id   INT             AUTO_INCREMENT  PRIMARY KEY,
     student_id      INT             NOT NULL,
@@ -84,9 +83,9 @@ CREATE TABLE Enrollments (
         ON UPDATE CASCADE
 );
 
--- ------------------------------------------------------------
+
 --  Indexes
--- ------------------------------------------------------------
+
 CREATE INDEX idx_students_department   ON Students    (department_id);
 CREATE INDEX idx_courses_department    ON Courses     (department_id);
 CREATE INDEX idx_enrollments_student   ON Enrollments (student_id);
